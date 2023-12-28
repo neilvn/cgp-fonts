@@ -1,0 +1,21 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "fonts",
+        "runtime": "python3.8",
+        "s3_bucket": "cgp-fonts-app-740623432439",
+        "manage_roles": false,
+        "role_arn": "arn:aws:iam::740623432439:role/zappa-deploy-role",
+        "log_level": "DEBUG",
+        "environment_variables": {
+            "SITE_USERNAME": "cgp",
+            "SITE_PASSWORD": "password",
+            "SECRET_KEY": "ffc0ef371cfd3e8eda53c085c1460dafdecb07a58c5b8db252c9f25d89e9bf45",
+            "BUCKET_NAME": "ad-assembly-bucket224050-dev",
+            "FAMILY_TABLE": "FamilyItem-daekxustevhhhmmjl6x7y52uoa-dev",
+            "FONT_TABLE": "FontItem-daekxustevhhhmmjl6x7y52uoa-dev"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link 
+        rel="stylesheet" 
+        href="{{ url_for('static', filename='styles.css') }}"
+    >
+</head>
+<body>
+    <div class="main">
+        <h1 style="margin-bottom: 25px;">Status</h1>
+        <a class="addmore" href="{{ url_for('index') }}">Add More Fonts</a>
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Style</th>
+              <th scope="col">Weight</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for result in results %}
+              <tr>
+                <th scope="row">{{ result['form'].get('name') }}</th>
+                <td>{{ result['form'].get('style') }}</td>
+                <td>{{ result['form'].get('weight') }}</td>
+                {% if result['status'] == 'Success' %}
+                  <td style="color: green;">{{ result.get('status') }}</td>
+                {% else %}
+                  <td style="color: red;">{{ result.get('status') }}</td>
+                {% endif %}                
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  font-family: "Verdana", sans-serif;
+}
+
+.main {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+.file-input {
+  width: 350px;
+  margin-right: 25px
+}
+
+.user-input {
+  margin-right: 25px;
+}
+
+.checkbox {
+  height: 16px;
+  width: 16px;
+  margin-left: 5px;
+}
+
+.dropdown {
+  width: 150px;
+}
+
+.font-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.uploader {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.button-container {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.update {
+  margin-right: 15px;
+}
+
+.name {
+  width: 250px;
+}
+
+.select-label {
+  margin-right: 5px;
+}
+
+.customer {
+  margin-bottom: 10px;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 2px;
+}
+
+.success {
+  color: green;
+}
+
+.failed {
+  color: red;
+}
+
+.addmore {
+  color: rgb(66, 135, 245);
+  padding: 7px;
+  margin-bottom: 20px;
+}
+
+.custom-table {
+  margin-top: 20px;
+}
